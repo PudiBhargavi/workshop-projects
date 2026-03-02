@@ -194,7 +194,7 @@ function App() {
         <section style={{ margin: "40px 0", textAlign: "center" }}>
           <h3>📱 Scan to Visit My Portfolio</h3>
           <QRCodeCanvas
-            value="https://your-vercel-deployment.vercel.app" // replace with actual URL
+            value="https://workshop-projects.vercel.app" // replace with actual URL
             size={200}
             bgColor={darkMode ? "#121212" : "#fff"}
             fgColor={darkMode ? "#fff" : "#000"}
