@@ -104,6 +104,77 @@ function App() {
           real-world applications that solve real problems.
         </p>
 
+        {/* About Me */}
+        <section
+          style={{
+            marginBottom: "40px",
+            maxWidth: "900px",
+            textAlign: "center",
+            backgroundColor: cardBg,
+            padding: "20px",
+            borderRadius: "10px",
+            boxShadow: darkMode
+              ? "0 4px 12px rgba(0,0,0,0.5)"
+              : "0 4px 12px rgba(0,0,0,0.1)",
+            transition: "0.3s",
+            cursor: "default",
+          }}
+          onMouseEnter={(e) =>
+            (e.currentTarget.style.boxShadow = darkMode
+              ? "0 6px 18px rgba(0,0,0,0.7)"
+              : "0 6px 18px rgba(0,0,0,0.2)")
+          }
+          onMouseLeave={(e) =>
+            (e.currentTarget.style.boxShadow = darkMode
+              ? "0 4px 12px rgba(0,0,0,0.5)"
+              : "0 4px 12px rgba(0,0,0,0.1)")
+          }
+        >
+          <h3>💡 About Me</h3>
+          <p style={{ lineHeight: "1.6", marginTop: "10px" }}>
+            I’m Bhargavi, an enthusiastic AI & Data Science engineer-in-the-making.
+            I love transforming data into insights, building intelligent applications,
+            and learning cutting-edge technologies to solve real-world problems.
+            Outside coding, I enjoy exploring tech trends and sharing knowledge with the community.
+          </p>
+
+          {/* Languages */}
+          <div style={{ marginTop: "15px", display: "flex", gap: "10px", justifyContent: "center", flexWrap: "wrap" }}>
+            <span style={{
+              padding: "5px 12px",
+              borderRadius: "20px",
+              backgroundColor: "#0d6efd",
+              color: "#fff",
+              fontWeight: "500",
+              fontSize: "0.85rem",
+            }}>English – Fluent</span>
+            <span style={{
+              padding: "5px 12px",
+              borderRadius: "20px",
+              backgroundColor: "#198754",
+              color: "#fff",
+              fontWeight: "500",
+              fontSize: "0.85rem",
+            }}>Tamil – Fluent</span>
+            <span style={{
+              padding: "5px 12px",
+              borderRadius: "20px",
+              backgroundColor: "#ffc107",
+              color: "#000",
+              fontWeight: "500",
+              fontSize: "0.85rem",
+            }}>Telugu – Fluent</span>
+            <span style={{
+              padding: "5px 12px",
+              borderRadius: "20px",
+              backgroundColor: "#fd7e14",
+              color: "#fff",
+              fontWeight: "500",
+              fontSize: "0.85rem",
+            }}>Hindi – Basic</span>
+          </div>
+        </section>
+
         <hr style={{ width: "80%", margin: "40px 0", border: "0", borderTop: `1px solid ${darkMode ? "#444" : "#ccc"}` }} />
 
         {/* Skills */}
@@ -194,7 +265,7 @@ function App() {
         <section style={{ margin: "40px 0", textAlign: "center" }}>
           <h3>📱 Scan to Visit My Portfolio</h3>
           <QRCodeCanvas
-            value="https://workshop-projects.vercel.app" // replace with actual URL
+            value="https://workshop-projects.vercel.app"
             size={200}
             bgColor={darkMode ? "#121212" : "#fff"}
             fgColor={darkMode ? "#fff" : "#000"}
@@ -214,7 +285,6 @@ function App() {
           50% { transform: translateY(-10px); }
         }
 
-        /* Media queries for mobile view */
         @media (max-width: 768px) {
           h1 { font-size: 2.2rem; }
           h2 { font-size: 1.4rem; }
