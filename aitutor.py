@@ -4,7 +4,7 @@ import os
 import time
 
 # Get API key
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = "your_key"
 
 st.set_page_config(page_title="AI Tutor", page_icon="🤖", layout="wide")
 
