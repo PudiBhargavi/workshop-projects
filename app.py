@@ -1,7 +1,7 @@
 import streamlit as st
 import requests
 
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = "your_key"
 
 st.title("📚 AI Tutor")
 
