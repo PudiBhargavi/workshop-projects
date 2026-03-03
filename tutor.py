@@ -11,7 +11,7 @@ from langchain.chat_models import ChatOpenAI
 from langchain.chains import RetrievalQA
 
 # ---------- API Key ----------
-OPENROUTER_API_KEY = "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"  # Replace with your actual key
+OPENROUTER_API_KEY = "your_key"  # Replace with your actual key
 
 st.set_page_config(page_title="AI Tutor", page_icon="🤖", layout="wide")
 
